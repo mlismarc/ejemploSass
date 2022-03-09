@@ -1,0 +1,244 @@
+/**************/
+/***********/
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 3px;
+  margin: 3px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 5px 2px rgba(151, 148, 148, 0.828);
+          box-shadow: 2px 2px 5px 2px rgba(151, 148, 148, 0.828);
+  /*
+    & &-primary{
+        @include setButton($primary);
+    }
+    & &-warning{
+        @include setButton($warning);
+    }
+    & &-danger{
+        @include setButton($danger);
+    }
+    & &-sucess{
+        @include setButton($sucess);
+    }
+    & &-info{
+        @include setButton($info);
+    }
+    */
+  /*
+    & &-primary{
+        border-color: $primary;
+
+        &:hover{            
+            background-color: $primary;
+            color: $primary;
+        }
+    }
+
+    & &-warning{
+        border-color: $warning;
+        &:hover{            
+            background-color: $warning;
+            color: $warning;
+        }
+    }      
+
+    & &-danger{
+        border-color: $danger;
+        &:hover{            
+            background-color: $danger;
+            color: $danger;
+        }
+    }
+    
+    & &-sucess{
+        border-color: $sucess;
+        &:hover{            
+            background-color: $sucess;
+            color: $sucess;
+        }
+    }
+    
+    & &-info{
+        border-color: $info;
+        &:hover{            
+            background-color: $info;
+            color: $info;
+        }
+    }
+    */
+}
+
+.btn:hover {
+  border-width: 0px;
+}
+
+.btn-primary {
+  border-color: blue;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: blue;
+  color: #fff;
+}
+
+.btn-warning {
+  border-color: orange;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.btn-warning:hover {
+  background-color: orange;
+  color: #fff;
+}
+
+.btn-danger {
+  border-color: red;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.btn-danger:hover {
+  background-color: red;
+  color: #fff;
+}
+
+.btn-success {
+  border-color: green;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.btn-success:hover {
+  background-color: green;
+  color: #fff;
+}
+
+.btn-info {
+  border-color: gray;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.btn-info:hover {
+  background-color: gray;
+  color: #fff;
+}
+
+.card {
+  width: 45%;
+  padding: 5px;
+  -webkit-box-shadow: 2px 2px 5px 2px rgba(163, 160, 160, 0.863);
+          box-shadow: 2px 2px 5px 2px rgba(163, 160, 160, 0.863);
+  border-style: solid;
+  color: #000;
+  text-align: center;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 60%;
+  border: none;
+  margin: auto;
+}
+
+.card-primary {
+  color: blue;
+  -webkit-box-shadow: 2px 2px 3px 2px #ccccff;
+          box-shadow: 2px 2px 3px 2px #ccccff;
+  /*La funcion predefinida por Sass lighten agrega el % indicado de iluminosidad al color.*/
+}
+
+.card-primary:hover {
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
+}
+
+.card-success {
+  color: green;
+  -webkit-box-shadow: 2px 2px 3px 2px #4dff4d;
+          box-shadow: 2px 2px 3px 2px #4dff4d;
+  /*La funcion predefinida por Sass lighten agrega el % indicado de iluminosidad al color.*/
+}
+
+.card-success:hover {
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
+}
+
+.card-warning {
+  color: orange;
+  -webkit-box-shadow: 2px 2px 3px 2px #ffedcc;
+          box-shadow: 2px 2px 3px 2px #ffedcc;
+  /*La funcion predefinida por Sass lighten agrega el % indicado de iluminosidad al color.*/
+}
+
+.card-warning:hover {
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
+}
+
+.card-danger {
+  color: red;
+  -webkit-box-shadow: 2px 2px 3px 2px #ffcccc;
+          box-shadow: 2px 2px 3px 2px #ffcccc;
+  /*La funcion predefinida por Sass lighten agrega el % indicado de iluminosidad al color.*/
+}
+
+.card-danger:hover {
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
+}
+
+.card-info {
+  color: gray;
+  -webkit-box-shadow: 2px 2px 3px 2px #e6e6e6;
+          box-shadow: 2px 2px 3px 2px #e6e6e6;
+  /*La funcion predefinida por Sass lighten agrega el % indicado de iluminosidad al color.*/
+}
+
+.card-info:hover {
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
+}
+
+.card-dark {
+  color: #000;
+  -webkit-box-shadow: 2px 2px 3px 2px #666666;
+          box-shadow: 2px 2px 3px 2px #666666;
+  /*La funcion predefinida por Sass lighten agrega el % indicado de iluminosidad al color.*/
+}
+
+.card-dark:hover {
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
+}
+
+ul {
+  list-style: none;
+}

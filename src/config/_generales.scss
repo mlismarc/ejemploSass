@@ -1,0 +1,11 @@
+//Setea el contenedor segun los valores indicados para FLEX
+@mixin setFlex ($dir, $aligX){
+    display: flex;
+    flex-direction: $dir;
+    //Agregar la caracteristica del alineado según la dirección
+    @if $dir == row  {
+        justify-content: $aligX;
+    } @else {
+        align-content: $aligX;
+    }    
+}

@@ -1,0 +1,17 @@
+//Declaracion de variables
+@import "config/variables";
+//Estilos generales
+@import "config/generales";
+//Incorporo los archivos de los diferentes componentes
+@import "components/containers";
+@import "components/buttons";
+@import "components/cards";
+//Estructuras que nos permiten reutilizar codigo
+
+//Funciones
+
+//Definicion de estilos
+
+ul{
+    list-style: none;
+}

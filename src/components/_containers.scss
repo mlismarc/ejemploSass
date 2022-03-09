@@ -1,0 +1,4 @@
+//Contenedor mas sencillo disponible
+.container{
+    @include setFlex(row, space-evenly);
+}

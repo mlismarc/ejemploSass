@@ -1,5 +1,8 @@
 /**************/
 /***********/
+/*************************************************************
+    Variables para estilos asociados al titulo: LISTAS, MAPAS
+ ************************************************************/
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -237,6 +240,40 @@
 .card-dark:hover {
   -webkit-transform: translateX(-5px);
           transform: translateX(-5px);
+}
+
+/***************** FUNCIONES ******************/
+/**************** ESTILOS *********************/
+.ttl {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+
+.ttl-xl {
+  font-family: "Courier New";
+  font-size: 25px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.ttl-xm {
+  font-family: "Courier New";
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.ttl-xs {
+  font-family: "Courier New";
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 ul {

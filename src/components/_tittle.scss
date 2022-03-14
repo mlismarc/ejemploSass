@@ -1,0 +1,53 @@
+//Estilos generales para titulos
+@mixin setTittle ($font, $size, $weight, $resalta: F){
+    font-family: $font;
+    font-size: $size;
+    font-weight: $weight;
+
+    @if ($resalta == T){
+        text-transform: uppercase;
+    }
+}
+
+/***************** FUNCIONES ******************/
+@function getSizeTittle($lista, $pos){
+    $valor: nth($lista, $pos);
+    @return $valor;
+}
+/**************** ESTILOS *********************/
+.ttl{
+    width: fit-content;
+    margin: auto;
+    padding: 0px;
+    box-sizing: border-box;
+    text-align: center;        
+   
+    // $nombreXL: nth(getSizeTittle($listFonts, 1), 1);
+
+    // &-#{$nombreXL}{
+    //     $title: getSizeTittle($listFonts, 1);
+    //     @include setTittle('Courier New', nth($title, 2), bolder);        
+    // }
+
+    // &-xm{
+    //     $title: getSizeTittle($listFonts, 2);
+    //     @include setTittle('Courier New', nth( $listFonts, 2), bold);
+    // }
+
+    // &-xs{
+    //     $title: getSizeTittle($listFonts, 3);
+    //     @include setTittle('Courier New', nth( $title, 2), 300);
+    // }
+    
+    
+    //USANDO LOS CICLOS: @each
+    @each $name, $size, $weight in $listFonts{
+        &-#{$name}{
+            @include setTittle('Courier New',  $size, $weight, T );
+        }
+    }
+
+}
+
+
+

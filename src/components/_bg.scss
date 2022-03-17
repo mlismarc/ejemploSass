@@ -1,0 +1,24 @@
+/*Componentes que contiene estilos para los diferentes Background */
+
+.bg{
+    margin: 0%;
+    padding: 0%;
+
+    //Del Mapa $paletta vamos a crear las clases concatenando el nombre de la key para generar el nombre de la clase
+
+    $listaLLaves: map-keys($map: $paletta);  
+
+    @each $label in $listaLLaves {
+        $colorFondo: #fff;
+
+        @if map-has-key($map: $paletta, $key: $label) {
+            $colorFondo: map-get($map:  $paletta, $key: $label);
+        } @else {
+            $colorFondo: red;
+        }
+        
+        &-#{$label}{
+            background-color: $colorFondo;
+        }
+    }
+}

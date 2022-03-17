@@ -3,6 +3,37 @@
 /*************************************************************
     Variables para estilos asociados al titulo: LISTAS, MAPAS
  ************************************************************/
+/******************* MAPAS *************************************/
+/*Componentes que contiene estilos para los diferentes Background */
+.bg {
+  margin: 0%;
+  padding: 0%;
+}
+
+.bg-primary {
+  background-color: blue;
+}
+
+.bg-success {
+  background-color: green;
+}
+
+.bg-warning {
+  background-color: orange;
+}
+
+.bg-danger {
+  background-color: darkred;
+}
+
+.bg-info {
+  background-color: gray;
+}
+
+.bg-dark {
+  background-color: #000;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -260,6 +291,7 @@
   font-size: 25px;
   font-weight: bolder;
   text-transform: uppercase;
+  color: blue;
 }
 
 .ttl-xm {
@@ -267,6 +299,7 @@
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
+  color: darkblue;
 }
 
 .ttl-xs {
@@ -274,6 +307,7 @@
   font-size: 15px;
   font-weight: 300;
   text-transform: uppercase;
+  color: darkred;
 }
 
 ul {

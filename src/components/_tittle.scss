@@ -41,12 +41,12 @@
     
     
     //USANDO LOS CICLOS: @each
-    @each $name, $size, $weight in $listFonts{
+    @each $name, $size, $weight, $colorTexto in $listFonts{
         &-#{$name}{
             @include setTittle('Courier New',  $size, $weight, T );
+            color: $colorTexto;
         }
     }
-
 }
 
 

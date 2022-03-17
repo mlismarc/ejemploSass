@@ -21,5 +21,12 @@ $shadow: 2px 2px 5px 2px rgba(151, 148, 148, 0.828);
 /*************************************************************
     Variables para estilos asociados al titulo: LISTAS, MAPAS
  ************************************************************/
- $listFonts: 'xl' 25px bolder, 'xm' 20px bold, 'xs' 15px 300;
+ $listFonts: 'xl' 25px bolder blue, 'xm' 20px bold darkblue, 'xs' 15px 300 darkred;
 
+ /******************* MAPAS *************************************/
+ $paletta: ('primary': blue, 
+            'success':green, 
+            'warning': orange, 
+            'danger':darkred,
+            'info': gray, 
+            'dark': #000); 
